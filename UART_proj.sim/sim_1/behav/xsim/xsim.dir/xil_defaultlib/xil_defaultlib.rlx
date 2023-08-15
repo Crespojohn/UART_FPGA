@@ -4,6 +4,6 @@ Nov  6 2019
 21:57:16
 C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.ip_user_files/bd/Uart_xadc/sim/Uart_xadc.v,1689704791,verilog,,C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.srcs/sources_1/bd/Uart_xadc/hdl/Uart_xadc_wrapper.v,,Uart_xadc,,axi_vip_v1_1_6;xilinx_vip,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/ec67/hdl;C:/Xilinx/Vivado/2019.2/data/xilinx_vip/include,,,,,
 C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.srcs/sim_1/new/Testbench.sv,1692065854,systemVerilog,,,,Testbench,,,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/4fba,,,,,
+C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.srcs/sim_1/new/Testbench.sv,1692072043,systemVerilog,,,,Testbench,,,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/4fba,,,,,
 C:/Users/cresp/FPGA_Projects/UART_proj/UART_proj.srcs/sources_1/bd/Uart_xadc/hdl/Uart_xadc_wrapper.v,1689704791,verilog,,,,Uart_xadc_wrapper,,axi_vip_v1_1_6;xilinx_vip,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/ec67/hdl;C:/Xilinx/Vivado/2019.2/data/xilinx_vip/include,,,,,
-C:/Users/cresp/FPGA_Projects/UART_proj/src/transmitter.v.v,1692032834,verilog,,,,transmitter,,,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/4fba,,,,,
+C:/Users/cresp/FPGA_Projects/UART_proj/src/transmitter.v.v,1692067553,verilog,,,,transmitter,,,../../../../UART_proj.srcs/sources_1/bd/Uart_xadc/ipshared/4fba,,,,,

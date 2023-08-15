@@ -25,7 +25,8 @@ input clk, //UART input clock
 input reset, // reset signal
 input transmit, //btn signal to trigger the UART communication
 input [7:0] data, // data transmitted
-output reg TxD // Transmitter serial output. TxD will be held high during reset, or when no transmissions aretaking place. 
+output reg TxD, // Transmitter serial output. TxD will be held high during reset, or when no transmissions aretaking place.
+output reg clear_done  
     );
 
 //internal variables
@@ -77,6 +78,7 @@ begin
     shift <=0; // set shift equal to 0 at the beginning
     clear <=0; // set clear equal to 0 at the beginning
     TxD <=1; // set TxD equals to during no transmission
+    clear_done = clear;
     case (state)
         0: begin // idle state
              if (transmit) begin // assert transmit input
