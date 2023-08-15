@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/Uart_xadc/ip/Uart_xadc_microblaze_0_0/sim/Uart_xadc_microblaze_0_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_dlmb_v10_0/sim/Uart_xadc_dlmb_v10_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_ilmb_v10_0/sim/Uart_xadc_ilmb_v10_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_dlmb_bram_if_cntlr_0/sim/Uart_xadc_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_ilmb_bram_if_cntlr_0/sim/Uart_xadc_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_mdm_1_0/sim/Uart_xadc_mdm_1_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_rst_clk_wiz_1_100M_0/sim/Uart_xadc_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/Uart_xadc/ip/Uart_xadc_axi_uartlite_0_1/sim/Uart_xadc_axi_uartlite_0_1.vhd" \
+
+nosort

@@ -1,0 +1,30 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3386fea66dbe44e0bb96a2b6a6e91d5f --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_6 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav xil_defaultlib.axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.axi_vip_0_exdes_generic_1
+Compiling module xil_defaultlib.axi_vip_0_mst_stimulus_1
+Compiling module xil_defaultlib.axi_vip_0_passthrough_mem_basic_...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_mst_0
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_passthrough_0
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_slv_0
+Compiling module xil_defaultlib.ex_sim
+Compiling module xil_defaultlib.chip
+Compiling module xil_defaultlib.axi_vip_0__exdes_basic_mst_activ...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav

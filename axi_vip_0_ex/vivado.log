@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jul 21 14:08:01 2023
+# Process ID: 17176
+# Current directory: c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex
+# Command line: vivado.exe -notrace -source c:/Users/cresp/FPGA_Projects/UART_proj/.Xil/axi_vip_0/tmp_axi_vip_0.srcs/sources_1/ip/axi_vip_0/axi_vip_0_ex.tcl
+# Log file: c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/vivado.log
+# Journal file: c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Users/cresp/FPGA_Projects/UART_proj/.Xil/axi_vip_0/tmp_axi_vip_0.srcs/sources_1/ip/axi_vip_0/axi_vip_0_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+create_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 901.938 ; gain = 322.168
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: Currently there is no design <ex_sim> in project, so creating one...
+Wrote  : <c:\Users\cresp\FPGA_Projects\UART_proj\axi_vip_0_ex\axi_vip_0_ex.srcs\sources_1\bd\ex_sim\ex_sim.bd> 
+create_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 985.539 ; gain = 74.480
+INFO: Making design <ex_sim> as current_bd_design.
+INFO: Currently the variable <design_name> is equal to "ex_sim".
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+Wrote  : <c:\Users\cresp\FPGA_Projects\UART_proj\axi_vip_0_ex\axi_vip_0_ex.srcs\sources_1\bd\ex_sim\ex_sim.bd> 
+Wrote  : <c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/ui/bd_c2e8f4ab.ui> 
+Slave segment </axi_vip_slv/S_AXI/Reg> is being mapped into address space </axi_vip_mst/Master_AXI> at <0x44A0_0000 [ 64K ]>
+CRITICAL WARNING: [filemgmt 20-742] The top module "axi_vip_0" specified for this project can not be validated. The current project is using automatic hierarchy update mode, and hence a new suitable replacement top will be automatically selected. If this is not desired, please change the hierarchy update mode to one of the manual compile order modes first, and then set top to any desired value.
+Resolution: To switch to manual update order go to the Sources view, right-click on any node in the hierarchy and in the context menu select: 'Hierarchy Update' option 'No Update' or run the following Tcl Command: set_property source_mgmt_mode None [current_project] (which is the Manual Compile Order mode).
+INFO: [open_example_project] Rebuilding all the top level IPs ...
+Wrote  : <c:\Users\cresp\FPGA_Projects\UART_proj\axi_vip_0_ex\axi_vip_0_ex.srcs\sources_1\bd\ex_sim\ex_sim.bd> 
+VHDL Output written to : c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/synth/ex_sim.v
+VHDL Output written to : c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/sim/ex_sim.v
+VHDL Output written to : c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/hdl/ex_sim_wrapper.v
+WARNING: [IP_Flow 19-5160] IP 'ex_sim_axi_vip_mst_0' detected simulation language mismatch. Simulation type 'tlm' does not support 'Verilog' outputs (see project's "simulator_language" property), delivering 'SystemC' outputs instead.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.ID_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vip_mst .
+WARNING: [IP_Flow 19-5160] IP 'ex_sim_axi_vip_passthrough_0' detected simulation language mismatch. Simulation type 'tlm' does not support 'Verilog' outputs (see project's "simulator_language" property), delivering 'SystemC' outputs instead.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.ID_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.ID_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vip_passthrough .
+WARNING: [IP_Flow 19-5160] IP 'ex_sim_axi_vip_slv_0' detected simulation language mismatch. Simulation type 'tlm' does not support 'Verilog' outputs (see project's "simulator_language" property), delivering 'SystemC' outputs instead.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.ID_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vip_slv .
+Exporting to file c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/hw_handoff/ex_sim.hwh
+Generated Block Design Tcl file c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/hw_handoff/ex_sim_bd.tcl
+Generated Hardware Definition File c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.srcs/sources_1/bd/ex_sim/synth/ex_sim.hwdef
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1130.652 ; gain = 126.621
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xsim/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/modelsim/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/questa/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/ies/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/vcs/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/riviera/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/activehdl/ex_sim_axi_vip_slv_0.h'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim.sh'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_mst_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_mst_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_passthrough_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_passthrough_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/axi_vip.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_slv_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/sim_scripts/ex_sim/xcelium/ex_sim_axi_vip_slv_0.h'
+export_ip_user_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1130.652 ; gain = 0.000
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+current_fileset -simset [ get_filesets sim_basic_mst_active_pt_mem__slv_passive ]
+launch_simulation -simset [get_filesets sim_basic_mst_active_pt_mem__slv_passive ]
+Command: launch_simulation -simset sim_basic_mst_active_pt_mem__slv_passive
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_basic_mst_active_pt_mem__slv_passive'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive' in fileset 'sim_basic_mst_active_pt_mem__slv_passive'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_basic_mst_active_pt_mem__slv_passive'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_6 -L xilinx_vip -prj axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_mst_0/sim/ex_sim_axi_vip_mst_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_mst_0/sim/ex_sim_axi_vip_mst_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_sim_axi_vip_mst_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/sim/ex_sim_axi_vip_passthrough_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_passthrough_0/sim/ex_sim_axi_vip_passthrough_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_sim_axi_vip_passthrough_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_slv_0/sim/ex_sim_axi_vip_slv_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/ip/ex_sim_axi_vip_slv_0/sim/ex_sim_axi_vip_slv_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_sim_axi_vip_slv_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.ip_user_files/bd/ex_sim/sim/ex_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_sim
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/imports/axi_vip_0_chip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/imports/axi_vip_0_exdes_basic_mst_active_pt_mem__slv_passive.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_vip_0_exdes_generic
+INFO: [VRFC 10-311] analyzing module axi_vip_0_mst_stimulus
+INFO: [VRFC 10-311] analyzing module axi_vip_0_passthrough_mem_basic_stimulus
+INFO: [VRFC 10-311] analyzing module axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1151.109 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim'
+"xelab -wto 3386fea66dbe44e0bb96a2b6a6e91d5f --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_6 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav xil_defaultlib.axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3386fea66dbe44e0bb96a2b6a6e91d5f --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_6 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav xil_defaultlib.axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.axi_vip_0_exdes_generic_1
+Compiling module xil_defaultlib.axi_vip_0_mst_stimulus_1
+Compiling module xil_defaultlib.axi_vip_0_passthrough_mem_basic_...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_mst_0
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_passthrough_0
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_PROTOCO...
+Compiling module xil_defaultlib.ex_sim_axi_vip_slv_0
+Compiling module xil_defaultlib.ex_sim
+Compiling module xil_defaultlib.chip
+Compiling module xil_defaultlib.axi_vip_0__exdes_basic_mst_activ...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim/xsim.dir/axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim/xsim.dir/axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 21 14:15:03 2023. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 21 14:15:03 2023...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 1151.109 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '36' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Users/cresp/FPGA_Projects/UART_proj/axi_vip_0_ex/axi_vip_0_ex.sim/sim_basic_mst_active_pt_mem__slv_passive/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav -key {Behavioral:sim_basic_mst_active_pt_mem__slv_passive:Functional:axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive} -tclbatch {axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive.tcl} -protoinst "protoinst_files/ex_sim.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/ex_sim.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/DUT/ex_design//axi_vip_mst/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/DUT/ex_design//axi_vip_passthrough/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/DUT/ex_design//axi_vip_passthrough/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/DUT/ex_design//axi_vip_slv/S_AXI
+Time resolution is 1 ps
+source axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/done_event was not traceable in the design for the following reason:
+Vivado Simulator does not support tracing of event type object.
+# run 1000ns
+XilinxAXIVIP: Found at Path: axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive.DUT.ex_design.axi_vip_mst.inst
+XilinxAXIVIP: Found at Path: axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive.DUT.ex_design.axi_vip_passthrough.inst
+This AXI VIP is in passthrough mode
+XilinxAXIVIP: Found at Path: axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive.DUT.ex_design.axi_vip_slv.inst
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+SUCCESS: Slave VIP against Master VIP scoreboard Compare passed
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1173.203 ; gain = 13.273
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:00:53 . Memory (MB): peak = 1173.203 ; gain = 22.094
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/axi_vip_0__exdes_basic_mst_active_pt_mem__slv_passive/DUT/ex_design/axi_vip_mst/M_AXI}} 
+run 10 us
+EXAMPLE TEST DONE : Test Completed Successfully
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 1130 ns : File "/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3126
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv: file does not exist.

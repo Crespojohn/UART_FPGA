@@ -1,0 +1,11 @@
+set read reg to 40600008 to check fifo status
+set rvalid to high
+let a few cycles run
+set rready to high to end read
+
+set write address
+set write data
+assert wvalid till wready is asserted
+assert awvalid till awready is asserted
+
+when awready and wready is high, assert bvalid to end write
