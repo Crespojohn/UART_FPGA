@@ -68,7 +68,7 @@ always@(posedge clk)begin
     end
     
     if(en_count%2)begin
-        tx_data_test = {4'b0011,dec_count};
+        tx_data_test = {6'b001100,en_count};
     end
     else begin
         tx_data_test =  8'h10;   
