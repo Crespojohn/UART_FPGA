@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Aug 15 00:14:04 2023
+| Date             : Tue Aug 15 00:41:47 2023
 | Host             : LAPTOP-KOAVM84P running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.129        |
+| Total On-Chip Power (W)  | 0.171        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.058        |
+| Dynamic (W)              | 0.099        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.4         |
-| Junction Temperature (C) | 25.6         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.010 |     1492 |       --- |             --- |
-|   LUT as Logic |     0.008 |      785 |     20800 |            3.77 |
+| Clocks         |     0.004 |        3 |       --- |             --- |
+| Slice Logic    |     0.010 |     1587 |       --- |             --- |
+|   LUT as Logic |     0.008 |      810 |     20800 |            3.89 |
 |   CARRY4       |     0.001 |      186 |      8150 |            2.28 |
-|   Register     |    <0.001 |      320 |     41600 |            0.77 |
+|   Register     |    <0.001 |      384 |     41600 |            0.92 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |       18 |       --- |             --- |
-| Signals        |     0.011 |     1237 |       --- |             --- |
+| Signals        |     0.012 |     1315 |       --- |             --- |
 | DSPs           |     0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.030 |       46 |       106 |           43.40 |
+| I/O            |     0.071 |       46 |       106 |           43.40 |
 | XADC           |     0.002 |        1 |       --- |             --- |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.129 |          |           |                 |
+| Total          |     0.171 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.036 |       0.026 |      0.010 |
-| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |
+| Vccint    |       1.000 |     0.037 |       0.027 |      0.010 |
+| Vccaux    |       1.800 |     0.015 |       0.003 |      0.013 |
+| Vcco33    |       3.300 |     0.021 |       0.020 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -143,7 +143,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| top          |     0.058 |
+| top          |     0.099 |
 |   D2         |     0.001 |
 |   XADC       |     0.025 |
 |     XLXI_7   |     0.002 |

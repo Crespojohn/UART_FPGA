@@ -46,8 +46,8 @@ output [3:0] an,
 output dp,              
 output [6:0] seg     
 ); 
-reg [1:0]dec_count;
-reg [2:0]en_count = 0;
+reg [3:0]dec_count;
+reg [3:0]en_count = 0;
 reg [2:0] data_count = 0;
 reg [7:0]tx_data;
 reg [15:0]tx_data_test;
@@ -102,6 +102,7 @@ always@(posedge clk)begin
         en_wait = en_wait + 1;
         if(en_wait >= 20900)begin
             en_count = en_count + 1;
+            dec_count = dec_count + 1;
             en_wait = 0;
             en = 0;
             if(en_count == 2)data_count = data_count + 1;
@@ -109,26 +110,23 @@ always@(posedge clk)begin
     end
     
     case(en_count)
-    2:  tx_data_test = {5'b00110,data_count};
+    6:  tx_data_test = {4'b0011,decimal_data_l[3:0]};
+    5:  tx_data_test = {4'b0011,decimal_data_l[7:4]};
+    4:  tx_data_test = {4'b0011,decimal_data_l[11:8]};
+    3:  tx_data_test = 8'h2E;
+    2:  tx_data_test = {4'b0011,decimal_data_l[15:12]};
     1:  tx_data_test = 8'h0D;
     0:  tx_data_test =  8'h0A;   
     default : tx_data_test =  8'h0D;
     endcase
-    /*
-    if(dec_count == 4)begin
-        decimal_data_l = 32'hABCD1234;
+    
+    if(dec_count == 5)begin
+        decimal_data_l = decimal_data;
         dec_count = 0;
         tx_data = 8'h10;
     end
-    if(dec_count == 1'h1)begin
-        tx_data = 8'h2E;
-        dec_count = dec_count + 1;
-    end
     
-    tx_data = {4'b0011,decimal_data_l[15:12]};
-    decimal_data_l = decimal_data_l << 4;
-    dec_count = dec_count + 1;
-    */
+    if(btn1) led = decimal_data_l;
 end 
 
 endmodule
